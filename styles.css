@@ -11,7 +11,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    background-color: black;
 }
 
 .nav-buttons
@@ -19,9 +28,16 @@
     padding: 0.625rem 0.938rem;
     text-decoration: none;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    color: white;
     margin: auto;
 }
+
+.nav-buttons:hover
+{
+    color: cyan;
+}
+/* Nav Bar ends here*/
 
 body
 {
@@ -38,12 +54,12 @@ footer
     padding: 10px;
 }
 
-container
+.container
 {
     flex-direction: column;
     justify-content: space-between;
     display: flex;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 #center
