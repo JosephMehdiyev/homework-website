@@ -11,6 +11,108 @@
         <script type="text/javascript" src="scripts.js"></script>      
     </head>
     <body>
-        #Homework 3: How websites work?
+        <style>
+            .linkca {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    
+    
+    
+}
+body{
+    text-align: center;
+}
+
+.linkca .preview {
+    opacity:0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    background: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition-duration: 0.7s;
+        
+}
+
+.linkca:hover .preview {  
+    opacity:1;
+}
+
+.preview img {
+    width:100px;
+    height: 64px;
+    display: block;
+}
+.website_project{
+    border-bottom:2px solid rgb(0,0,0);
+    border-radius:15px;
+}
+.codeacademy_links{
+    border-bottom:2px solid rgb(0,0,0);
+    border-radius:15px;
+}
+.process{
+    border-bottom:2px solid rgb(0,0,0);
+    border-radius:15px;
+}
+#calogo img{
+    display:inline;
+    width:164px;
+    height:36px;
+    position: relative;
+    top:8px;
+    transition-duration:0.7s;
+      }
+#calogo:hover #logoca{
+    width:184px;
+    height:40px;
+      }      
+        </style>
+        <header>
+
+        </header>
+        <div class="website_project">
+            <h1>Homework 3: How websites work?</h1>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+
+        </div>
+        <div class="process">
+            <h1>The Process</h1>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div class="codeacademy_links">
+            <h1 id="heading"><span>Our</span> <span id="calogo"><a href="https://www.codecademy.com/learn" target="_blank"><img src="media/codeacademy_logo.png" id="logoca"/></a></span> <span>pages</span></h1> 
+            <div class="linkca">
+                <a href="https://example.net" target="_blank">Ilham Hajiyev</a>
+                <div class="preview">
+                    <img src="https://www.reddit.com/r/css/comments/12twicb/the_transition_is_not_working/?rdt=50041">                 
+                </div>
+            </div>
+
+            <div class="linkca">
+                <a href="https://example.net" target="_blank">Nurlan Guluzada</a>
+                <div class="preview">
+                    <img src="https://via.placeholder.com/300x150/00ff00" >
+                </div>
+            </div>
+
+            <div class="linkca">
+                <a href="https://example.net" target="_blank">Yusif Mehdiyev</a>
+                <div class="preview">
+                    <img src="https://via.placeholder.com/300x150/00ff00" >
+                </div>
+            </div>
+            <div class="linkca">
+                <a href="https://example.net" target="_blank">Samira Yusifova</a>
+                <div class="preview">
+                    <img src="https://via.placeholder.com/300x150/00ff00" >
+                </div>
+            </div> 
+        </div>
     </body>
 </html>
