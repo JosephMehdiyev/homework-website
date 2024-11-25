@@ -132,5 +132,24 @@ footer
     width: 184px;
     height: 40px;
 }
+#darkmode{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:transparent;
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    left:48%;
+    bottom:2.5px;
+    
+}
+#darkmodebutton{
+    visibility:hidden;
+}
 
-
+#darkmode:hover #dmp{
+    width:45px;
+    height:45px;
+    transition-duration: 0.7s;
+}

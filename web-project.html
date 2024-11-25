@@ -14,6 +14,16 @@
 </head>
 
 <body>
+    <script>
+        let darkmode = document.getElementsByClassName("darkmode")
+        let darkmodebutton = document.getElementById("darkmodebutton")
+        darkmodebutton.addEventListener("click",function(){
+            if (darkmode==="active"){switchdarkmode()}
+            else{switchlightmode()}
+        })
+
+        
+    </script>
     <header>
         <nav class="top-nav">
             <a class="nav-buttons" href="/code-artist.html">Code Artist</a>
@@ -21,6 +31,10 @@
             <a class="nav-buttons" href="/index.html">Index/Home</a>
             <a class="nav-buttons" href="/team-members.html">Team Members</a>
             <a class="nav-buttons" href="/web-project.html">Web Project</a>
+            <div class="darkmode">
+                <input type="checkbox" id="darkmodebutton">
+                <label for="darkmodebutton" id="darkmode"><img src="C:\Users\ilham\Desktop\homework-3-team-59\media\darkmodepng.png" width="40px" height="40px" id="dmp"/></label>
+            </div>
         </nav>
     </header>
     <div class="container">
