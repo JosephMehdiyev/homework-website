@@ -66,7 +66,7 @@ footer
 {
     text-align: center;
 }
-
+/*codeacademy links*/
 .linkca 
 {
     position: relative;
@@ -98,18 +98,19 @@ footer
     height: 64px;
     display: block;
 }
+.codeacademy_links 
+{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
 
+/*codeacademy links end*/
 .website_project 
 {
     border-bottom: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
 }
 
-.codeacademy_links 
-{
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
-}
 
 .process 
 {
@@ -132,24 +133,33 @@ footer
     width: 184px;
     height: 40px;
 }
-#darkmode{
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
+/*Color theme button*/
+#darkmodebutton{
+
+    border-radius: 50px;
     background-color:transparent;
     cursor:pointer;
     display: inline-block;
     position: relative;
-    left:48%;
     bottom:2.5px;
-    
-}
-#darkmodebutton{
-    visibility:hidden;
+    border:2px;
+    border-color: #ffffff;
+
 }
 
-#darkmode:hover #dmp{
-    width:45px;
-    height:45px;
+#darkmodebutton:hover #dmp{
+    width:30px;
+    height:30px;
     transition-duration: 0.7s;
+    fill:cyan;
 }
+#darkmodebutton:hover #lmp{
+    width:30px;
+    height:30px;
+    transition-duration: 0.7s;
+    fill:cyan;
+}
+#darkmodebutton svg:last-child{
+    display:none
+}
+/*Color theme button*/
