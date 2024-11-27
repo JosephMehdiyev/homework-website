@@ -47,6 +47,7 @@ function DrawSpiral(context) {
         turnRight(89);
     }
 }
+/*code for colot theme button */
 var darkmode="inactive"
 var time = new Date().getHours();
 var button = document.getElementById("darkmodebutton")
@@ -78,6 +79,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });        
     });
 
-if (time===18){
-    switchdarkmode()
+
+/*code for color theme button ends*/
+/*code for greeting screen */
+document.addEventListener("DOMContentLoaded", () => {
+if(time>=0 && time<12){
+    document.getElementById("greeting-message").innerText = "Good Morning!"
 }
+if(time>=12 && time<18){
+    document.getElementById("greeting-message").innerText = "Good Afternoon!"
+}
+if(time>=18 && time<21){
+    document.getElementById("greeting-message").innerText = "Good Evening!"
+}
+else{
+    document.getElementById("greeting-message").innerText = "Good Evening!"
+}
+});
+function timeout(){
+    setTimeout(()=>{
+        document.getElementById("greeting-message").style.opacity = "0"
+
+    },700);
+    setTimeout(()=>{
+        document.getElementById("greeting-message").style.display = "none"
+    },1400);
+    
+   
+}
+timeout()
+
+/*code for greeting screen ends*/
+
