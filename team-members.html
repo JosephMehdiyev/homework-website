@@ -7,116 +7,264 @@
 <html>
 
 <head>
-    <title>Homework 3: Team members</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Homework 3: How websites work?</title>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="scripts.js"></script>
+    <style>
+      * {
+    font-family: Nunito, sans-serif;
+  }
+  
+  .responsive-cell-block {
+    min-height: 75px;
+  }
+  
+  .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  
+  .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: space-evenly;
+  }
+  
+  .team-head-text {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .team-head-text {
+    line-height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  
+  .container {
+    max-width: 1380px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  }
+  
+  .card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+  }
+  
+  .card-container {
+    width: 280px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+  
+  .name {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .position {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  
+  .feature-text {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    color: rgb(122, 122, 122);
+    line-height: 30px;
+  }
+  
+  .social-icons {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .team-image-wrapper {
+    clip-path: circle(50% at 50% 50%);
+    width: 130px;
+    height: 130px;
+  }
+  
+  .team-member-image {
+    max-width: 100%;
+  }
+  
+  @media (max-width: 500px) {
+    .card-container {
+      width: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 25px;
+      margin-left: 0px;
+    }
+  }
+    </style>
+      <title>Homework 3: Team members</title>
+      <link rel="stylesheet" href="styles.css">
+      <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  
+  <body>
+      <header>
+          <nav class="top-nav">
+              <a class="nav-buttons" href="/code-artist.html">Code Artist</a>
+              <a class="nav-buttons" href="/hour-of-code.html">Hour of code</a>
+              <a class="nav-buttons" href="/index.html">Index/Home</a>
+              <a class="nav-buttons" href="/team-members.html">Team Members</a>
+              <a class="nav-buttons" href="/web-project.html">Web Project</a>
+              <div class="darkmode">
+                  <button type="button" id="darkmodebutton">
+                      <svg xmlns="http://www.w3.org/2000/svg" id="lmp"height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" id="dmp" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                  </button>
+              </div>
+          </nav>
+      </header>
+      <div class="responsive-container-block-container">
+          <p class="text-blk team-head-text">
+             Team Members 
+          </p>
+      <div class="responsive-container-block">
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+              <div class="card">
+                  <div class="team-image-wrapper">
+                      <img class="team-member-image" src="media/nurlan.jpg">
+                  </div>  
+                  <p class="text-blk name">
+                      Nurlan Guluzada
+                  </p>  
+                  <p class="text-blk position">
+                      Student
+                  </p>
+                  <p class="text-blk feature-text">
+                      Nurlan's major is BSEEE. Nurlan aims to be successful engineer in the long run. He is freshman at coding.
+                  </p>
+                  <div class="social-icons">
+                      <a href="https://www.instagram.com/o18.nurlan" target="_blank">
+                        <i class="fa fa-instagram" style="font-size:36px"></i>
+                      </a>
+                   </div> 
+              </div>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+              <div class="card">
+                <div class="team-image-wrapper">
+                  <img class="team-member-image" src="media/samira.jpg">
+                </div>
+                <p class="text-blk name">
+                  Samira Yusifova
+                </p>
+                <p class="text-blk position">
+                  Student
+                </p>
+                <p class="text-blk feature-text">
+                  Samira is a first-year Computer Science student at Ada University. She is passionate about technology, innovation and mathematics, aiming to grow academically and professionally.
+                </p>
+                <div class="social-icons">
+                  <a href="https://www.instagram.com/syusifova_25" target="_blank">
+                    <i class="fa fa-instagram" style="font-size:36px"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+              <div class="card">
+                <div class="team-image-wrapper">
+                  <img class="team-member-image" src="media/ilham2.jpg">
+                </div>
+                <p class="text-blk name">
+                  Ilham Hajiyev
+                </p>
+                <p class="text-blk position">
+                  Student
+                </p>
+                <p class="text-blk feature-text">
+                  Ilham is a Computer Engineering major who aspires to be a person of many skills in the future. He likes to play chess and video games.
+                </p>
+                <div class="social-icons">
+                  <a href="https://www.instagram.com/hac13v08" target="_blank">
+                    <i class="fa fa-instagram" style="font-size:36px"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+              <div class="card">
+                <div class="team-image-wrapper">
+                  <img class="team-member-image" src="">
+                </div>
+                <p class="text-blk name">
+                  Yusif Mehdiyev
+                </p>
+                <p class="text-blk position">
+                  Student
+                </p>
+                <p class="text-blk feature-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="social-icons">
+                  <a href="https://www.instagram.com/yusifmehdiyevv" target="_blank">
+                    <i class="fa fa-instagram" style="font-size:36px"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
 </head>
 
 <body>
-    <header>
-        <nav class="top-nav">
-            <a class="nav-buttons" href="/code-artist.html">Code Artist</a>
-            <a class="nav-buttons" href="/hour-of-code.html">Hour of code</a>
-            <a class="nav-buttons" href="/index.html">Index/Home</a>
-            <a class="nav-buttons" href="/team-members.html">Team Members</a>
-            <a class="nav-buttons" href="/web-project.html">Web Project</a>
-            <div class="darkmode">
-                <button type="button" id="darkmodebutton">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="lmp"height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" id="dmp" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-                </button>
-            </div>
-        </nav>
-    </header>
-    <div class="responsive-container-block-container">
-        <p class="text-blk team-head-text">
-           Team Members 
-        </p>
-    <div class="responsive-container-block">
-        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-            <div class="card">
-                <div class="team-image-wrapper">
-                    <img class="team-member-image" src="">
-                </div>  
-                <p class="text-blk name">
-                    Nurlan Guluzada
-                </p>  
-                <p class="text-blk position">
-                    Student
-                </p>
-                <p class="text-blk feature-text">
-                    Nurlan's major is BSEEE. Nurlan aims to be successful engineer in the long run. He is freshman at coding.
-                </p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/o18.nurlan" target="_blank">
-                        <img class="instagram-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQtpHFFaMw_0RtE4I7PodWeMdgMhXcZgnYw&s">
-                    </a>
-                 </div> 
-            </div>
+  <header>
+    <nav class="top-nav">
+        <a class="nav-buttons" href="/code-artist.html">Code Artist</a>
+        <a class="nav-buttons" href="/hour-of-code.html">Hour of code</a>
+        <a class="nav-buttons" href="/index.html">Index/Home</a>
+        <a class="nav-buttons" href="/team-members.html">Team Members</a>
+        <a class="nav-buttons" href="/web-project.html">Web Project</a>
+        <div class="darkmode">
+            <button type="button" id="darkmodebutton">
+                <svg xmlns="http://www.w3.org/2000/svg" id="lmp"height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="dmp" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            </button>
         </div>
-        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-            <div class="card">
-              <div class="team-image-wrapper">
-                <img class="team-member-image" src="">
-              </div>
-              <p class="text-blk name">
-                Samira Yusifova
-              </p>
-              <p class="text-blk position">
-                Student
-              </p>
-              <p class="text-blk feature-text">
-                Samira is a first-year Computer Science student at Ada University. She is passionate about technology, innovation and mathematics, aiming to grow academically and professionally.
-              </p>
-              <div class="social-icons">
-                <a href="https://www.instagram.com/syusifova_25" target="_blank">
-                  <img class="instagram-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQtpHFFaMw_0RtE4I7PodWeMdgMhXcZgnYw&s">
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-            <div class="card">
-              <div class="team-image-wrapper">
-                <img class="team-member-image" src="">
-              </div>
-              <p class="text-blk name">
-                Ilham Hajiyev
-              </p>
-              <p class="text-blk position">
-                Student
-              </p>
-              <p class="text-blk feature-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="social-icons">
-                <a href="https://www.instagram.com/hac13v08" target="_blank">
-                  <img class="instagram-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQtpHFFaMw_0RtE4I7PodWeMdgMhXcZgnYw&s">
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-            <div class="card">
-              <div class="team-image-wrapper">
-                <img class="team-member-image" src="">
-              </div>
-              <p class="text-blk name">
-                Yusif Mehdiyev
-              </p>
-              <p class="text-blk position">
-                Student
-              </p>
-              <p class="text-blk feature-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="social-icons">
-                <a href="https://www.instagram.com/yusifmehdiyevv" target="_blank">
-                  <img class="instagram-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQQtpHFFaMw_0RtE4I7PodWeMdgMhXcZgnYw&s">
-                </a>
-              </div>
-            </div>
-          </div>              
-</body>
-
-</html>
+    </nav>
+</header>
