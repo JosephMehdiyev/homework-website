@@ -26,6 +26,7 @@ header {
     padding: 0.625rem 0.938rem;
     border: 2px solid red;
     text-decoration: none;
+    display: inline-block;
     background-color: black;
     text-align: center;
     font-size: 1.1rem;
@@ -34,7 +35,7 @@ header {
 }
 
 .nav-buttons:hover {
-    color: cyan;
+    color: red;
 }
 
 /* Nav Bar ends here*/
