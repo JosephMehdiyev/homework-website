@@ -1,81 +1,76 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* Do not touch these, they are used ONLY on top navigation bar*/
-.top-nav
-{
+.top-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
 
-header
-{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px;
-    background-color: black;
+    height: 300px;
+    background-image: url("media/4musketeers3.jpg");
+    background-position: right 15%;
+    background-size: cover;
 }
 
-.nav-buttons
-{
+.nav-buttons {
     padding: 0.625rem 0.938rem;
+    border: 2px solid red;
     text-decoration: none;
+    background-color: black;
     text-align: center;
     font-size: 1.1rem;
     color: white;
     margin: auto;
 }
 
-.nav-buttons:hover
-{
+.nav-buttons:hover {
     color: cyan;
 }
+
 /* Nav Bar ends here*/
 
-body
-{
+body {
     background-color: #f8f9fa;
     color: black;
     text-align: center;
 
 }
 
-footer
-{
+footer {
     height: 150px;
     text-align: center;
     padding: 10px;
 }
 
-.container
-{
+.container {
     flex-direction: column;
     justify-content: space-between;
     display: flex;
     min-height: 80vh;
 }
 
-#center
-{
+#center {
     text-align: center;
 }
+
 /*codeacademy links*/
-.linkca 
-{
+.linkca {
     position: relative;
     display: inline-block;
     margin: 20px;
 }
 
-.linkca .preview 
-{
+.linkca .preview {
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -87,39 +82,34 @@ footer
     transition-duration: 0.7s;
 }
 
-.linkca:hover .preview 
-{
+.linkca:hover .preview {
     opacity: 1;
 }
 
-.preview img 
-{
+.preview img {
     width: 100px;
     height: 64px;
     display: block;
 }
-.codeacademy_links 
-{
+
+.codeacademy_links {
     border-bottom: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
 }
 
 /*codeacademy links end*/
-.website_project 
-{
+.website_project {
     border-bottom: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
 }
 
 
-.process 
-{
+.process {
     border-bottom: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
 }
 
-#calogo img 
-{
+#calogo img {
     display: inline;
     width: 164px;
     height: 36px;
@@ -128,50 +118,53 @@ footer
     transition-duration: 0.7s;
 }
 
-#calogo:hover #logoca 
-{
+#calogo:hover #logoca {
     width: 184px;
     height: 40px;
 }
+
 /*Color theme button*/
-#darkmodebutton{
+#darkmodebutton {
 
     border-radius: 50px;
-    background-color:transparent;
-    cursor:pointer;
+    background-color: transparent;
+    cursor: pointer;
     display: inline-block;
 
-    bottom:2.5px;
-    border:2px;
+    bottom: 2.5px;
+    border: 2px;
     border-color: #ffffff;
 
 }
 
-#darkmodebutton:hover #dmp{
-    width:30px;
-    height:30px;
+#darkmodebutton:hover #dmp {
+    width: 30px;
+    height: 30px;
     transition-duration: 0.7s;
-    fill:cyan;
+    fill: cyan;
 }
-#darkmodebutton:hover #lmp{
-    width:30px;
-    height:30px;
+
+#darkmodebutton:hover #lmp {
+    width: 30px;
+    height: 30px;
     transition-duration: 0.7s;
-    fill:cyan;
+    fill: cyan;
 }
-#darkmodebutton svg:last-child{
-    display:none
+
+#darkmodebutton svg:last-child {
+    display: none
 }
+
 /*Color theme button*/
 /*Greeting message*/
-#greeting-message{
-    position:fixed;
-    display:flex;
+#greeting-message {
+    position: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: cyan;
     width: 100vw;
-    height:100vh;
+    height: 100vh;
     transition: opacity 0.7s;
 }
 
