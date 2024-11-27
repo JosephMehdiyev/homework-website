@@ -46,11 +46,26 @@ body {
 
 }
 
+/* Everything about footer */
 footer {
-    height: 150px;
-    text-align: center;
+    display: flex;
+    /* Use Flexbox */
+    justify-content: space-between;
+    /* Align items */
+    align-items: center;
+    /* Vertically center the items */
+    padding: 20px;
+    background-color: black;
+    height: 80px;
     padding: 10px;
 }
+
+.footer-logo {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Footer ends */
 
 .container {
     flex-direction: column;
