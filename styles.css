@@ -85,7 +85,11 @@ main {
     align-items: center;
     flex: 1;
     min-height: 80vh;
-    width: 95%;
+    width: 90%;
+}
+
+h1 img {
+    width: 90px;
 }
 
 #left-align {
@@ -93,8 +97,14 @@ main {
     align-self: flex-start;
 }
 
+#left-align img {
+    width: 30px;
+    padding-top: 10px;
+}
+
 p {
     font-size: 1.4em;
+    margin-bottom: 15px;
 }
 
 p a {
