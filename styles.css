@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    
 }
 
 
@@ -150,34 +151,36 @@ p a {
     position: relative;
     display: inline-block;
     margin: 100px;
+
+}
+
+#codeacademy_links a{
+    text-decoration: none;
+    color: red;
     
 }
 
-
-
 iframe {
     width: 600px;
-    height: 500px;
+    height: 700px;
     border-radius: 10%;
     
 
 }
 
-.codeacademy_links {
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
-}
+
 
 /*codeacademy links end*/
-.website_project {
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
+.h1wp{
+    margin-bottom: 1%;
+}
+#website_project {
+
 }
 
 
-.process {
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
+#process {
+
 }
 
 #calogo img {
@@ -198,48 +201,45 @@ iframe {
 /*Color theme button*/
 #darkmodebutton {
 
-    border-radius: 50px;
-    background-color: transparent;
-    cursor: pointer;
-    display: inline-block;
-
-    bottom: 2.5px;
-    border: 2px;
-    border-color: #ffffff;
+    
+        padding: 0.625rem 0.938rem;
+        border: 2px solid red;
+        text-decoration: none;
+        display: inline-block;
+        background-color: black;
+        text-align: center;
+        font-size: 1.1rem;
+        color: white;
+        margin: auto;
+    
 
 }
 
 #darkmodebutton:hover #dmp {
-    width: 30px;
-    height: 30px;
     transition-duration: 0.7s;
-    fill: cyan;
+    fill: red;
 }
 
 #darkmodebutton:hover #lmp {
-    width: 30px;
-    height: 30px;
     transition-duration: 0.7s;
-    fill: cyan;
+    fill: red;
 }
 
 #darkmodebutton svg:last-child {
     display: none
 }
 
+
 /*Color theme button*/
 /*Greeting message*/
 #greeting-message {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    background-color: cyan;
+    color:white;
+    background-color: rgb(37, 4, 4);
     width: 100vw;
-    height: 295vh;
+    height: 270vh;
     transition: opacity 0.7s;
-    padding-top: 270px;
-
+    padding-top: 700px;
+    font-size: xx-large;
 }
-
-
 /*Greeting message ends*/

@@ -23,7 +23,7 @@
             <a class="nav-buttons" href="team-members.html">Team Members</a>
             <a class="nav-buttons" href="web-project.html">Web Project</a>
             <div class="darkmode">
-                <button type="button" id="darkmodebutton">
+                <button type="button" id="darkmodebutton" >
                     <svg xmlns="http://www.w3.org/2000/svg" id="lmp" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#e8eaed">
                         <path
@@ -39,39 +39,28 @@
         </nav>
     </header>
     <main>
-        <div class="website_project">
-            <h1>Homework 3: How websites work?</h1>
+        <div id="website_project" >
+            <h1 class="h1wp">Homework 3: How websites work?</h1>
             <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum."
-            </p>
-        </div>
-        <div class="process">
-            <h1>The Process</h1>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum."
-            </p>
-        </div>
+                The website you are viewing at the moment was created based on the instructions that we received for the "Homework 3: How websites work?" assignment of our "Principles of Information Systems" course. We used the knowledge that we gained from our Codeacademy courses on HTML, CSS and JS. We were instructed to make the website informative, rich and interactive.The assignment was shared amongst each team member with every member working on their individual tasks.This experience enhanced our teamwork skills and taught us how to use Git which is a crucial application for developers. These skills will definitely reflect better results in the future. 
 
-        <div class="codeacademy_links">
+            </p>
+            <hr>
+        </div>
+        <div id="process" >
+            <h1 class="h1wp">The Process</h1>
+            <p>The assignment was shared amongst each team member with Nurlan working on the "Team members", Samira on the "Hour of Code", Yusif on the "Home page" and Bonus tasks, lastly, Ilham on the "Web project" page. We used HTML for the fundamental structure, CSS for styling and lastly JS for certain dynamic elements such as the color theme button, the greeting screen and the code art project which was a bonus task. Communication was a crucial aspect in the process. We had to make sure that every member had correctly tuned their IDEs (MS VSC) i.e., were not having trouble committing and pulling or creating merge conflicts etc. Once all were done, we published the website on GitHub. 
+            </p>
+            <hr>
+        </div>
+        
+        <div id="codeacademy_links">
             <h1 id="heading"><span>Our</span> <span id="calogo"><a href="https://www.codecademy.com/learn"
                         target="_blank"><img src="media/codeacademy_logo.png" class="logoca" id="darkca"/><img src="media/codeacademy_logo_light.png" class="logoca" id = 'lightca'/></a></span>
                 <span>pages</span>
             </h1>
             <div class="linkca">
-                <a href="https://example.net" target="_blank">Ilham Hajiyev</a>
+                <a href="https://www.codecademy.com/profiles/ihajiyev23998" target="_blank">Ilham Hajiyev</a>
                 <div class="iframe">
                     <iframe src="https://www.codecademy.com/profiles/ihajiyev23998"></iframe>
 
@@ -79,14 +68,14 @@
             </div>
 
             <div class="linkca">
-                <a href="https://example.net" target="_blank">Nurlan Guluzada</a>
+                <a href="https://www.codecademy.com/profiles/NurlanGuluzada" target="_blank">Nurlan Guluzada</a>
                 <div class="iframe">
-                    
+                    <iframe src="https://www.codecademy.com/profiles/NurlanGuluzada"></iframe>
                 </div>
             </div>
             <hr>
             <div class="linkca">
-                <a href="https://www.codecademy.com/profiles/Yusif_Mehdiyev " target="_blank">Yusif Mehdiyev</a>
+                <a href="https://www.codecademy.com/profiles/Yusif_Mehdiyev" target="_blank">Yusif Mehdiyev</a>
                 <div class="iframe">
                     <iframe src="https://www.codecademy.com/profiles/Yusif_Mehdiyev"></iframe>
                 </div>
@@ -102,9 +91,47 @@
 </body>
 <script>
     document.getElementById('lightca').style.display = "none"
-    if (time >= 18) {
+    var darkmode = localStorage.getItem("darkmode") 
+var button = document.getElementById("darkmodebutton")
+const switchdarkmode = () => {
+    document.getElementById('dmp').style.display = "block"
+    document.getElementById('lmp').style.display = "none"
+    document.body.style.backgroundColor = "rgb(0,0,0)"
+    document.body.style.color = "rgb(230,230,230)"
+    localStorage.setItem("darkmode", "active") 
+    darkmode = "active"
+    document.getElementById('lightca').style.display = "inline-block"
+    document.getElementById('darkca').style.display = "none"
+};
+
+const switchlightmode = () => {
+    document.getElementById('dmp').style.display = "none"
+    document.getElementById('lmp').style.display = "block"
+    document.body.style.backgroundColor = "rgb(255,255,255)"
+    document.body.style.color = "rgb(0,0,0)"
+    localStorage.setItem("darkmode", "inactive")
+    darkmode = "inactive" 
+    document.getElementById('lightca').style.display = "none"
+    document.getElementById('darkca').style.display = "inline-block"
+
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (darkmode === "active") {
         switchdarkmode()
+    } else {
+        switchlightmode()
     }
+
+    const button = document.getElementById("darkmodebutton");
+    button.addEventListener("click", () => {
+        if (darkmode === "active") {
+            switchlightmode()
+        } else {
+            switchdarkmode()
+        }
+    });
+});
 
     
 </script>
@@ -116,7 +143,9 @@
         Submitted in partial fulfillment of the requirements of the course.
     </p>
 </footer>
-<script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="scripts.js">
+
+</script>
 
 </body>
 

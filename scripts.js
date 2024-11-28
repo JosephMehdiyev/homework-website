@@ -26,8 +26,6 @@ const switchdarkmode = () => {
     document.body.style.color = "rgb(230,230,230)"
     localStorage.setItem("darkmode", "active") 
     darkmode = "active"
-    
-
 };
 
 const switchlightmode = () => {
