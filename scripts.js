@@ -15,35 +15,44 @@ for (let i = 0; i < navButtons.length; i++) {
 }
 /* Navigation script ends here*/
 
-/*code for colot theme button */
-
-var darkmode = "inactive"
-var time = new Date().getHours();
+/*code for color theme button */
+var time = new Date().getHours()
+var darkmode = localStorage.getItem("darkmode") 
 var button = document.getElementById("darkmodebutton")
-
-
-
 const switchdarkmode = () => {
     document.getElementById('dmp').style.display = "block"
     document.getElementById('lmp').style.display = "none"
-    document.body.style.backgroundColor = "rgb(128,128,128)"
+    document.body.style.backgroundColor = "rgb(0,0,0)"
+    document.body.style.color = "rgb(230,230,230)"
+    localStorage.setItem("darkmode", "active") 
     darkmode = "active"
-}
+    
+
+};
+
 const switchlightmode = () => {
     document.getElementById('dmp').style.display = "none"
     document.getElementById('lmp').style.display = "block"
     document.body.style.backgroundColor = "rgb(255,255,255)"
-    darkmode = "inactive"
-}
+    document.body.style.color = "rgb(0,0,0)"
+    localStorage.setItem("darkmode", "inactive")
+    darkmode = "inactive" 
+
+};
 
 document.addEventListener("DOMContentLoaded", () => {
-    const button = document.getElementById("darkmodebutton");
+    if (darkmode === "active") {
+        switchdarkmode()
+    } else {
+        switchlightmode()
+    }
 
+    const button = document.getElementById("darkmodebutton");
     button.addEventListener("click", () => {
         if (darkmode === "active") {
-            switchlightmode();
+            switchlightmode()
         } else {
-            switchdarkmode();
+            switchdarkmode()
         }
     });
 });
@@ -65,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("greeting-message").innerText = "Good Night!"
     }
 });
-console.log(time)
 function timeout() {
     setTimeout(() => {
         document.getElementById("greeting-message").style.opacity = "0"
