@@ -20,6 +20,7 @@ header {
     background-image: url("media/4musketeers3.jpg");
     background-position: right 15%;
     background-size: cover;
+    width: 100%;
 }
 
 .nav-buttons {
@@ -50,17 +51,19 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: center;
+    /* Centers the main horizontally */
+    align-items: center;
+    /* Centers the main vertically */
 
 }
 
 /* Everything about footer */
 footer {
+    width: 100%;
     display: flex;
-    /* Use Flexbox */
     justify-content: space-between;
-    /* Align items */
     align-items: center;
-    /* Vertically center the items */
     padding: 20px;
     background-color: black;
     height: 80px;
@@ -75,13 +78,61 @@ footer {
 /* Footer ends */
 
 main {
+    background: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     flex: 1;
     min-height: 80vh;
+    width: 95%;
 }
 
-#center {
-    text-align: center;
+#left-align {
+    text-align: left;
+    align-self: flex-start;
 }
+
+p {
+    font-size: 1.4em;
+}
+
+p a {
+    text-decoration: none;
+}
+
+
+/* Font classes */
+.fancy-font {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
 
 /*codeacademy links*/
 .linkca {
