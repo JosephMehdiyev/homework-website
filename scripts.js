@@ -61,10 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (time >= 18 && time < 21) {
         document.getElementById("greeting-message").innerText = "Good Evening!"
     }
-    else {
-        document.getElementById("greeting-message").innerText = "Good Evening!"
+    if (time >= 21 && time <= 23){
+        document.getElementById("greeting-message").innerText = "Good Night!"
     }
 });
+console.log(time)
 function timeout() {
     setTimeout(() => {
         document.getElementById("greeting-message").style.opacity = "0"

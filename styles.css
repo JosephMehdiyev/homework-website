@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* Do not touch these, they are used ONLY on top navigation bar*/
 .top-nav {
     display: flex;
@@ -242,12 +243,13 @@ p a {
     position: fixed;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: cyan;
     width: 100vw;
-    height: 100vh;
+    height: 295vh;
     transition: opacity 0.7s;
+    padding-top: 270px;
+
 }
 
 
-/*Greeting message*/
+/*Greeting message ends*/
