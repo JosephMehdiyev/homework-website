@@ -244,23 +244,4 @@ iframe {
     padding-top: 25rem;
 }
 /*Greeting message ends*/
-/*Team member container*/
-.members{
-    display: flex;
-    
-    justify-content: space-between;
-}
-.membercontainer{
-    display: inline-block;
-    border:2px solid red;
-    width:20rem;
-    height:40rem;
-    border-radius:5%;
-    margin-left: 3rem;
-}
-.membercontainer img{
-    display:inline;
-    border-radius: 50%;
-    position:relative
-}
-/*Team member container*/
+
