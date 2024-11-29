@@ -1,125 +1,190 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
+
 /* Do not touch these, they are used ONLY on top navigation bar*/
-.top-nav
-{
+.top-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
 
-header
-{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px;
-    background-color: black;
+    height: 18.75rem;
+    background-image: url("media/4musketeers3.jpg");
+    background-position: right 15%;
+    background-size: cover;
+    width: 100%;
 }
 
-.nav-buttons
-{
+.nav-buttons {
     padding: 0.625rem 0.938rem;
+    border: 2px solid red;
     text-decoration: none;
+    display: inline-block;
+    background-color: black;
     text-align: center;
     font-size: 1.1rem;
     color: white;
     margin: auto;
+    margin-right: 1rem;
 }
 
-.nav-buttons:hover
-{
-    color: cyan;
+#nav-active {
+    color: red;
 }
+
+.nav-buttons:hover {
+    color: red;
+}
+
 /* Nav Bar ends here*/
 
-body
-{
+body {
     background-color: #f8f9fa;
     color: black;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    /* Centers the main horizontally */
+    align-items: center;
+    /* Centers the main vertically */
 
 }
 
-footer
-{
-    height: 150px;
-    text-align: center;
+/* Everything about footer */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    height: 80px;
     padding: 10px;
 }
 
-.container
-{
+.footer-logo {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Footer ends */
+
+main {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    display: flex;
+    align-items: center;
+    flex: 1;
     min-height: 80vh;
+    width: 90%;
 }
 
-#center
-{
-    text-align: center;
+h1 img {
+    width: 90px;
 }
+
+#left-align {
+    text-align: left;
+    align-self: flex-start;
+}
+
+#left-align img {
+    width: 30px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+p a {
+    text-decoration: none;
+}
+
+
+/* Font classes */
+.fancy-font {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
 /*codeacademy links*/
-.linkca 
-{
+.linkca {
     position: relative;
     display: inline-block;
-    margin: 20px;
+    margin-right:2.5rem;
+    margin-left:2.5rem;
+
 }
 
-.linkca .preview 
-{
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100px;
-    background: #000000;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition-duration: 0.7s;
+#codeacademy_links a{
+    text-decoration: none;
+    color: red;
+    
 }
 
-.linkca:hover .preview 
-{
-    opacity: 1;
+iframe {
+    width: 30rem;
+    height: 50rem;
+    border-radius: 10%;
+    
+
 }
 
-.preview img 
-{
-    width: 100px;
-    height: 64px;
-    display: block;
-}
-.codeacademy_links 
-{
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
-}
+
 
 /*codeacademy links end*/
-.website_project 
-{
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
+.h1wp{
+    margin-bottom: 1%;
+}
+#website_project {
+    padding:1rem;
 }
 
 
-.process 
-{
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
+#process {
+    padding:1rem;
 }
 
-#calogo img 
-{
+#calogo img {
     display: inline;
     width: 164px;
     height: 36px;
@@ -128,52 +193,55 @@ footer
     transition-duration: 0.7s;
 }
 
-#calogo:hover #logoca 
-{
+#calogo:hover .logoca {
     width: 184px;
     height: 40px;
 }
+
+
 /*Color theme button*/
-#darkmodebutton{
+#darkmodebutton {
 
-    border-radius: 50px;
-    background-color:transparent;
-    cursor:pointer;
-    display: inline-block;
-
-    bottom:2.5px;
-    border:2px;
-    border-color: #ffffff;
+    
+        padding: 0.625rem 0.938rem;
+        border: 2px solid red;
+        text-decoration: none;
+        display: inline-block;
+        background-color: black;
+        text-align: center;
+        font-size: 1.1rem;
+        color: white;
+        margin: auto;
+    
 
 }
 
-#darkmodebutton:hover #dmp{
-    width:30px;
-    height:30px;
+#darkmodebutton:hover #dmp {
     transition-duration: 0.7s;
-    fill:cyan;
+    fill: red;
 }
-#darkmodebutton:hover #lmp{
-    width:30px;
-    height:30px;
+
+#darkmodebutton:hover #lmp {
     transition-duration: 0.7s;
-    fill:cyan;
+    fill: red;
 }
-#darkmodebutton svg:last-child{
-    display:none
+
+#darkmodebutton svg:last-child {
+    display: none
 }
+
+
 /*Color theme button*/
 /*Greeting message*/
-#greeting-message{
-    position:fixed;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: cyan;
-    width: 100vw;
-    height:100vh;
+#greeting-message {
+    position: fixed;
+    color:white;
+    background-color: rgb(37, 4, 4);
+    width: 120rem;
+    height: 120rem;
     transition: opacity 0.7s;
+    font-size: xx-large;
+    padding-top: 25rem;
 }
+/*Greeting message ends*/
 
-
-/*Greeting message*/

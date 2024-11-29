@@ -1,6 +1,6 @@
 /*
     (c)2024 by Yusif Mehdiyev
-    (c)2024 by Araz Yusubov (the old code, I'll delete it later tho)
+    (c)2024 by Araz Yusubov 
     This file contains all of the code about the generation of the code art for the bonus task
     NOTE: DO NOT WRITE ANYTHING SCRIPT RELATED here. Keep your website stuff in scripts.
 */
