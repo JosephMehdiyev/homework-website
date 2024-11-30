@@ -20,12 +20,20 @@
             box-sizing: border-box;
         }
         .pictures-of-event img{
+            flex: 0 0 22% ;
             width: 18.75rem;
-            height: auto;
+            height: 14rem;
             border-radius: 0.5rem;
             object-fit: cover;
         }
-            
+
+        .table{
+            position: relative;
+            left:10%;
+        }
+        h1{
+            margin:10px;
+        }      
     </style>
 </head>
 
@@ -54,7 +62,7 @@
         </nav>
     </header>
     <main>
-        <h1 style="color: blue; text-align: center;">Hour Of Code event</h1>
+        <h1 style="color: blue">Hour Of Code event</h1>
         <section id="hour of code report">
             <div>
                 <p style="font-size: 18px; ">
@@ -80,7 +88,6 @@
                     <img src="media/img02.jpeg" alt="event image 2">
                     <img src="media/img03.jpeg" alt="event image 3">
                     <img src="media/img04.jpeg" alt="event image 4">
-                    <br>
                     <img src="media/img05.jpeg" alt="event image 5">
                     <img src="media/img06.jpeg" alt="event image 6">
                     <img src="media/img07.jpeg" alt="event image 7">
@@ -88,33 +95,38 @@
                 </div>
 
             </section>
-        <table border="1" align="center">
-            <tr>
-                <th width="500" height="70">team member</th>
-                <th width="500">contribution to the event and report</th>
-                <th width="500">Estimated %</th>
-            </tr>
-            <tr>
-                <td >Yusif Mehdiyev</td>
-                <td >Team leader, organized the event, wrote the short report, main tutor, revised long report, wrote the main submission file</td>
-                <td >25</td>
-            </tr>
-            <tr>
-                <td >Ilham Hajiyev</td>
-                <td >Wrote the long report, assisted children in the event, second tutor, revised the short report</td>
-                <td >25</td>
-            </tr>
-            <tr>
-                <td >Samira Yusifova</td>
-                <td >Took footages and videos at the event, edited the video for bonus 1, helped leader gather the children</td>
-                <td >25</td>
-            </tr>
-            <tr>
-                <td >Nurlan Guluzada</td>
-                <td >Helped children in the event, gave brief introduction about the ADA university and school, helped leader gather the children</td>
-                <td >25</td>
-            </tr>
-        </table>
+            <video width="850" height="600" controls >
+                <source src="media\hourofcode video.mp4" type="video/mp4">
+            </video>
+        <div class="table">
+            <table border="1" align="center">
+                <tr>
+                    <th width="500" height="70">team member</th>
+                    <th width="500">contribution to the event and report</th>
+                    <th width="500">Estimated %</th>
+                </tr>
+                <tr>
+                    <td >Yusif Mehdiyev</td>
+                    <td >Team leader, organized the event, wrote the short report, main tutor, revised long report, wrote the main submission file</td>
+                    <td >25</td>
+                </tr>
+                <tr>
+                    <td >Ilham Hajiyev</td>
+                    <td >Wrote the long report, assisted children in the event, second tutor, revised the short report</td>
+                    <td >25</td>
+                </tr>
+                <tr>
+                    <td >Samira Yusifova</td>
+                    <td >Took footages and videos at the event, edited the video for bonus 1, helped leader gather the children</td>
+                    <td >25</td>
+                </tr>
+                <tr>
+                    <td >Nurlan Guluzada</td>
+                    <td >Helped children in the event, gave brief introduction about the ADA university and school, helped leader gather the children</td>
+                    <td >25</td>
+                </tr>
+            </table>
+        </div>
     </main>
     <footer>
         <img src="media/ada_logo_white.png" alt="ADA logo" class="footer-logo">
