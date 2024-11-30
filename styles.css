@@ -24,6 +24,7 @@ header {
     background-position: right 15%;
     background-size: cover;
     width: 100%;
+    border-radius: 10px;
 }
 
 .nav-buttons {

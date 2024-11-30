@@ -19,9 +19,8 @@ for (let i = 0; i < navButtons.length; i++) {
 var time = new Date().getHours()
 var darkmode = localStorage.getItem("darkmode") 
 var button = document.getElementById("darkmodebutton")
-var path = window.location.pathname
-
-
+var path = window.location.pathname.split("/")
+let page = path[path.length-1]
 const switchdarkmode = () => {
     document.getElementById('dmp').style.display = "block"
     document.getElementById('lmp').style.display = "none"
@@ -29,13 +28,13 @@ const switchdarkmode = () => {
     document.body.style.color = "rgb(230,230,230)"
     localStorage.setItem("darkmode", "active") 
     darkmode = "active"
-    if(path==="/team-members.html"){
+    if(page==="team-members.html" ){
         const elements = document.querySelectorAll('.card')
         elements.forEach(element => {
             element.style.boxShadow = "rgba(50, 50, 50, 50.05) 0px 4px 20px 7px "; 
           });
     }
-    if(path==="/web-project.html"){
+    if(page==="web-project.html" ){
         document.getElementById('lightca').style.display = "inline-block"
         document.getElementById('darkca').style.display = "none"
     }
@@ -49,13 +48,13 @@ const switchlightmode = () => {
     document.body.style.color = "rgb(0,0,0)"
     localStorage.setItem("darkmode", "inactive")
     darkmode = "inactive" 
-    if(path==="/team-members.html"){
+    if(page==="team-members.html"){
         const elements = document.querySelectorAll('.card')
         elements.forEach(element => {
             element.style.boxShadow = " rgba(0, 0, 0, 0.05) 0px 4px 20px 7px "; 
           });
     }
-    if(path==="/web-project.html"){
+    if(page==="web-project.html"){
         document.getElementById('lightca').style.display = "none"
         document.getElementById('darkca').style.display = "inline-block"
     }
@@ -107,6 +106,5 @@ function timeout() {
 
 }
 timeout()
-
 /*code for greeting screen ends*/
 
