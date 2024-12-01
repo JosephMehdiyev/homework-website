@@ -82,6 +82,12 @@ footer {
     height: auto;
 }
 
+footer p {
+    font-size: 1em;
+    align-items: center;
+    padding-top: 20px;
+}
+
 /* Footer ends */
 
 main {
@@ -313,7 +319,7 @@ iframe {
 }
 
 .pictures-of-event img {
-    flex: 0 0 22%;
+    flex: 0 0 24%;
     width: 18.75rem;
     height: 14rem;
     border-radius: 0.5rem;
@@ -327,4 +333,8 @@ iframe {
 
 h1 {
     margin: 10px;
+}
+
+#hour-of-code-images {
+    text-align: center;
 }
