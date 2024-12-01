@@ -17,24 +17,24 @@ for (let i = 0; i < navButtons.length; i++) {
 
 /*code for color theme button */
 var time = new Date().getHours()
-var darkmode = localStorage.getItem("darkmode") 
+var darkmode = localStorage.getItem("darkmode")
 var button = document.getElementById("darkmodebutton")
 var path = window.location.pathname.split("/")
-let page = path[path.length-1]
+let page = path[path.length - 1]
 const switchdarkmode = () => {
     document.getElementById('dmp').style.display = "block"
     document.getElementById('lmp').style.display = "none"
     document.body.style.backgroundColor = "rgb(0,0,0)"
     document.body.style.color = "rgb(230,230,230)"
-    localStorage.setItem("darkmode", "active") 
+    localStorage.setItem("darkmode", "active")
     darkmode = "active"
-    if(page==="team-members.html" ){
+    if (page === "team-members.html") {
         const elements = document.querySelectorAll('.card')
         elements.forEach(element => {
-            element.style.boxShadow = "rgba(50, 50, 50, 50.05) 0px 4px 20px 7px "; 
-          });
+            element.style.boxShadow = "rgba(50, 50, 50, 50.05) 0px 4px 20px 7px ";
+        });
     }
-    if(page==="web-project.html" ){
+    if (page === "web-project.html") {
         document.getElementById('lightca').style.display = "inline-block"
         document.getElementById('darkca').style.display = "none"
     }
@@ -47,14 +47,14 @@ const switchlightmode = () => {
     document.body.style.backgroundColor = "rgb(255,255,255)"
     document.body.style.color = "rgb(0,0,0)"
     localStorage.setItem("darkmode", "inactive")
-    darkmode = "inactive" 
-    if(page==="team-members.html"){
+    darkmode = "inactive"
+    if (page === "team-members.html") {
         const elements = document.querySelectorAll('.card')
         elements.forEach(element => {
-            element.style.boxShadow = " rgba(0, 0, 0, 0.05) 0px 4px 20px 7px "; 
-          });
+            element.style.boxShadow = " rgba(0, 0, 0, 0.05) 0px 4px 20px 7px ";
+        });
     }
-    if(page==="web-project.html"){
+    if (page === "web-project.html") {
         document.getElementById('lightca').style.display = "none"
         document.getElementById('darkca').style.display = "inline-block"
     }
@@ -80,7 +80,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /*code for color theme button ends*/
 /*code for greeting screen */
+function timeout() {
+    setTimeout(() => {
+        document.getElementById("greeting-message").style.opacity = "0"
+
+    }, 700);
+    setTimeout(() => {
+        document.getElementById("greeting-message").style.display = "none"
+    }, 1400);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+
     if (time >= 0 && time < 12) {
         document.getElementById("greeting-message").innerText = "Good Morning!"
     }
@@ -90,21 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (time >= 18 && time < 21) {
         document.getElementById("greeting-message").innerText = "Good Evening!"
     }
-    if (time >= 21 && time <= 23){
+    if (time >= 21 && time <= 23) {
         document.getElementById("greeting-message").innerText = "Good Night!"
     }
 });
-function timeout() {
-    setTimeout(() => {
-        document.getElementById("greeting-message").style.opacity = "0"
-
-    }, 700);
-    setTimeout(() => {
-        document.getElementById("greeting-message").style.display = "none"
-    }, 1400);
-
-
-}
 timeout()
+
 /*code for greeting screen ends*/
 

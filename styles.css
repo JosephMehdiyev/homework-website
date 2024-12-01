@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    zoom:99%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    zoom: 99%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 
@@ -154,38 +154,39 @@ p a {
 .linkca {
     position: relative;
     display: inline-block;
-    margin-right:2.5rem;
-    margin-left:2.5rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
 
 }
 
-#codeacademy_links a{
+#codeacademy_links a {
     text-decoration: none;
     color: red;
-    
+
 }
 
 iframe {
     width: 30rem;
     height: 50rem;
     border-radius: 10%;
-    
+
 
 }
 
 
 
 /*codeacademy links end*/
-.h1wp{
+.h1wp {
     margin-bottom: 1%;
 }
+
 #website_project {
-    padding:1rem;
+    padding: 1rem;
 }
 
 
 #process {
-    padding:1rem;
+    padding: 1rem;
 }
 
 #calogo img {
@@ -206,17 +207,17 @@ iframe {
 /*Color theme button*/
 #darkmodebutton {
 
-    
-        padding: 0.625rem 0.938rem;
-        border: 2px solid red;
-        text-decoration: none;
-        display: inline-block;
-        background-color: black;
-        text-align: center;
-        font-size: 1.1rem;
-        color: white;
-        margin: auto;
-    
+
+    padding: 0.625rem 0.938rem;
+    border: 2px solid red;
+    text-decoration: none;
+    display: inline-block;
+    background-color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    margin: auto;
+
 
 }
 
@@ -239,7 +240,7 @@ iframe {
 /*Greeting message*/
 #greeting-message {
     position: fixed;
-    color:white;
+    color: white;
     background-color: rgb(37, 4, 4);
     width: 100%;
     height: 200rem;
@@ -247,5 +248,83 @@ iframe {
     font-size: xx-large;
     padding-top: 70rem;
 }
+
 /*Greeting message ends*/
 
+.membercontainer {
+    display: flex;
+
+}
+
+.card {
+
+    height: 45rem;
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+    width: min-content;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+.img-team {
+    display: inline;
+
+}
+
+.img {
+    width: 20.625rem;
+    height: 20.625rem;
+}
+
+.name {
+    right: 20px;
+    font-style: italic;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.is {
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.content h1 {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.igicon {
+    margin: auto;
+    width: 50%;
+}
+
+/* Hour of code css*/
+.pictures-of-event {
+    display: flex;
+    gap: 0.625rem;
+    flex-wrap: wrap;
+    padding: 0.625rem;
+    box-sizing: border-box;
+}
+
+.pictures-of-event img {
+    flex: 0 0 22%;
+    width: 18.75rem;
+    height: 14rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.table {
+    position: relative;
+    padding: 2.5%;
+}
+
+h1 {
+    margin: 10px;
+}
