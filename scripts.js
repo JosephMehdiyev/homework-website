@@ -81,13 +81,16 @@ document.addEventListener("DOMContentLoaded", () => {
 /*code for color theme button ends*/
 /*code for greeting screen */
 function timeout() {
-    setTimeout(() => {
+    if (sessionStorage.getItem('greeting-messageshown')) {
+        document.getElementById("greeting-message").style.display = "none";
+    }
+    else{setTimeout(() => {
         document.getElementById("greeting-message").style.opacity = "0"
 
-    }, 700);
+    }, 900);
     setTimeout(() => {
         document.getElementById("greeting-message").style.display = "none"
-    }, 1400);
+    }, 1800);sessionStorage.setItem('greeting-messageshown', 'true')}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
